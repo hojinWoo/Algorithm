@@ -1,14 +1,16 @@
 import java.util.Scanner;
 
 class Stack{
-	int top;
 	int size;
 	int[] stack;
+	int front;
+	int back;
 
 	public Stack(int size){
 		this.size = size;
 		this.stack = new int[size];
-		this.top=-1;
+		this.front = -1;
+		this.back = -1;
 	}
 
 	void push(int X){
@@ -44,10 +46,8 @@ class Stack{
 }
 
 public class Main {
-	//static ArrayList<Integer> al = new ArrayList<Integer>();
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Stack st = new Stack(10000);
 		Scanner sc = new Scanner(System.in);
 		int temp = sc.nextInt();
