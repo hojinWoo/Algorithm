@@ -1,16 +1,14 @@
 import java.util.Scanner;
 
 class Stack{
+	int top;
 	int size;
 	int[] stack;
-	int front;
-	int back;
 
 	public Stack(int size){
 		this.size = size;
 		this.stack = new int[size];
-		this.front = -1;
-		this.back = -1;
+		this.top=-1;
 	}
 
 	void push(int X){
