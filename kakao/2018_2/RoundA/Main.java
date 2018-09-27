@@ -1,4 +1,4 @@
-import java.util.Hashtable;
+﻿import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 
@@ -25,13 +25,13 @@ public class Main {
 		for (int i = 0; i < record.length; i++) {
 			recordInput = record[i].split(" ");
 			id = recordInput[1];
-			if (recordInput[0].equalsIgnoreCase(ENTER)) {
+			if (recordInput[0].equalsIgnoreCase("ENTER")) {
 				nickName = recordInput[2];
 				user.add(id, nickName);
 				print.put(temp++,id+","+ "님이 들어왔습니다.");
-			} else if (recordInput[0].equalsIgnoreCase(LEAVE)) {
+			} else if (recordInput[0].equalsIgnoreCase("LEAVE")) {
 				print.put(temp++,id+","+ "님이 나갔습니다.");
-			} else if (recordInput[0].equalsIgnoreCase(CHANGE)) {
+			} else if (recordInput[0].equalsIgnoreCase("CHANGE")) {
 				nickName = recordInput[2];
 				user.change(id, nickName);
 			}
@@ -43,7 +43,7 @@ public class Main {
 			String msg = it.next();
 			String[] msgSplit = msg.split(",");
 			answer[temp] = user.getNickname(msgSplit[0])+msgSplit[1];
-			System.out.println(answer[temp]);
+			//System.out.println(answer[temp]);
 			temp++;
 		}
 		return answer;
