@@ -13,6 +13,14 @@
 
 
 
+##### 자주 쓰는 기능 단축키(template)로 만들기
+
+window > preferences > Java > Editor > Templates > new
+
+자주 쓰는 것 등록하고 {cursor} 위치까지 지정 가능
+
+
+
 ##### 자동완성기능
 
 Preference : `java > Editor > Templates` 에서 등록 가능
